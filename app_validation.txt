@@ -1,0 +1,1 @@
+PASS Streamlit AppTest: all 6 Runs x 3 cameras; both slider endpoints for each video; initial load; no application exceptions. PASS causal gap/recovery reset and saved NPZ inference consistency. Windows CMD checked statically only. No real Windows browser UI test performed.

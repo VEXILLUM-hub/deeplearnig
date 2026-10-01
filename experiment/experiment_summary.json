@@ -1,0 +1,27 @@
+{
+  "model_trained": true,
+  "models": 3,
+  "architecture": "576-64-16-64-576 dense autoencoder; 3 hidden layers, not a CNN",
+  "total_scored_frames": 3042,
+  "train_runs": 1,
+  "calibration_runs": 1,
+  "held_out_normal_runs": 1,
+  "held_out_event_runs": 3,
+  "sklearn_version": "1.8.0",
+  "numpy_version": "2.3.5",
+  "protocol": "fixed roles OP028 train / OP031 calibration / OP033 normal test / OP022 OP023 OP026 event test; all cameras kept in same Run split",
+  "causal_flag": "2 consecutive above-threshold frames; reset after >5s gap, no recovery flags",
+  "gate": "not_validated",
+  "bubble_detection": "not_validated",
+  "future_symptom_prediction": "not_trained",
+  "limitations": [
+    "Only one normal Run used for training and one for calibration; same-stage process matching not verified.",
+    "ROIs inherited from preceding exploratory review; this is not a blinded confirmatory study.",
+    "OP033 Cam0 view mismatch: scores shown as out-of-view comparison and excluded from normal comparison claims.",
+    "Event annotations are air-ingress interventions, not bubble onset labels.",
+    "A new flag before a sensor annotation is not validated early detection.",
+    "Frame windows and cameras are correlated; do not count frames as independent trials.",
+    "80 epochs is a fixed exploration budget; warning may report optimizer did not converge.",
+    "No raw sensor values or measured camera/sensor synchronization uncertainty supplied."
+  ]
+}

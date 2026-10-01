@@ -1,0 +1,9 @@
+{
+  "input_filename": "event_video_validation_results.zip",
+  "input_sha256": "d6c247437eae450d897976ba2f6b77deb26a6bdcd540d5404b62b7d5a2c20477",
+  "sources": [
+    "https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html",
+    "https://docs.streamlit.io/develop/api-reference/app-testing"
+  ],
+  "prior_team_handoff": "22_batch_video_team_handoff.zip; superseded deep_learning NOT_RUN only by this exploratory experiment, not by validated bubble/forecast performance"
+}
